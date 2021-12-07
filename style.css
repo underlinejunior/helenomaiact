@@ -8,8 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  color: rgb(255, 255, 255);}
+body {
+  color: rgb(255, 255, 255);
+}
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -18,17 +19,22 @@ ul {
   list-style: none;
 }
 
-
+.titulo {
+  background-color: transparent;
+  width: 0vw;
+  visibility: hidden;
+}
 .logo {
+  background-attachment: fixed;
   width: 5rem;
   margin-left: 5rem;
   transition: 0.9s;
 }
 header {
+  margin-top: -2rem;
+  padding:1.5rem;
   visibility: visible;
   align-items: center;
-  margin: 0 1rem;
-  padding: 1rem 0;
   position: fixed;
   width: 100vw;
 }
@@ -98,9 +104,9 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 0.5fr 1.1fr 1.3fr;
 }
-.fotos img{
-  height:20rem;
-  border-radius:0.5rem;
+.fotos img {
+  height: 20rem;
+  border-radius: 0.5rem;
 }
 .title {
   background: linear-gradient(black, rgb(56, 56, 56));
@@ -156,13 +162,13 @@ footer section .whats {
   float: right;
   padding-right: 1rem;
 }
-.des{
-  margin-top:1rem;
+.des {
+  margin-top: 1rem;
   margin-bottom: 1rem;
-  padding:1rem;
+  padding: 1rem;
   text-align: right;
-  font-family: "roboto", verdana, sans-serif;
-  color:black;
+  font-family: 'roboto', verdana, sans-serif;
+  color: black;
 }
 @media (max-width: 1065px) {
   nav,
@@ -172,24 +178,27 @@ footer section .whats {
     width: 0vw;
     visibility: hidden;
   }
+
   footer section img {
     float: right;
     z-index: 100;
   }
-  nav img .logo {
+  .titulo {
+    margin-top:3rem;
     visibility: inherit;
     z-index: 100;
     width: 90vw;
     opacity: 1;
+    align-self: center;
   }
   #home {
     margin-top: 0;
   }
   .fotos {
-    display:block;
+    display: block;
     width: 95vw;
   }
-  .fotos img{
+  .fotos img {
     width: 30rem;
   }
   footer div {
