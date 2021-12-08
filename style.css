@@ -62,8 +62,12 @@ nav ul li a:hover {
 }
 .helenomaia {
   transition: 0.9s;
-  width: 100vw;
+  width: 77vw;
+  margin-right:2rem;
+  margin-left: 0;
+  margin-top:2rem;
   background-attachment: inherit;
+  background-color:transparent
 }
 
 #contato {
@@ -202,6 +206,10 @@ footer section .whats {
     width: 0vw;
     visibility: hidden;
   }
+  #home {
+    visibility:hidden;
+    height: 0;
+  }
 .footer section{
   background-color: gray;
   overflow: hidden;
@@ -209,11 +217,6 @@ footer section .whats {
   footer section img {
     float: right;
     z-index: 100;
-  }
-  #home {
-    height: 70vh;
-    padding-top: 5rem;
-    background-color: #676767;
   }
   .titulo {
     margin-top: 3rem;
@@ -239,16 +242,6 @@ footer section .whats {
   .fotos img {
     width: 30rem;
     overflow: hidden;
-  }
-  .fotos img:hover {
-    display: block;
-    position: absolute;
-    transition: 1s;
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    overflow: hidden;
-    width: 100%;
   }
   footer div {
     width: 95vw;
